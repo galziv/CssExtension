@@ -9,3 +9,8 @@ to make a div element with height of 40% from window and width of 80% from eleme
 ```
 
 The syntax is similar to css. Specify the property then ':' {selector|window|screen}|}{percentage}
+<br/>
+And in the document ready event call 
+```javascript
+csse.bootstrap()
+```
