@@ -8,7 +8,7 @@ to make a div element with height of 40% from window and width of 80% from eleme
 <div csse-style="height: window|40%;width: #someElement > .someClass|80%;"></div>
 ```
 
-The syntax is similar to css. Specify the property then ':' {selector|window|screen}|}{percentage}
+The syntax is similar to css. {propertyName} : {selector|window|screen} | {percentage};
 <br/>
 And in the document ready event call 
 ```javascript
