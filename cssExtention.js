@@ -121,10 +121,18 @@
     }
 
     csse.bootstrap = function (root) {
-	
-		root = root || '';
+		
+		var $selector;
+		
+		if(typeof(root) == 'string'){
+			$selector = $(root + " [csse-style]");
+		} else if(typeof(root) == 'object'){
+			$selector = root;
+		} else {
+			$selector = $("[csse-style]")
+		}
 
-        $(root + " [csse-style]").each(function () {
+        $selector.each(function () {
             var $el = $(this);
             var csseStyle = clearWhiteSpaces($el.attr('csse-style'));
 
