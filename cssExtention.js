@@ -120,9 +120,11 @@
         }
     }
 
-    csse.bootstrap = function () {
+    csse.bootstrap = function (root) {
+	
+		root = root || '';
 
-        $("[csse-style]").each(function () {
+        $(root + " [csse-style]").each(function () {
             var $el = $(this);
             var csseStyle = clearWhiteSpaces($el.attr('csse-style'));
 
